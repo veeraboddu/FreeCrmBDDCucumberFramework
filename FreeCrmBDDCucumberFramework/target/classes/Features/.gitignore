@@ -1,3 +1,7 @@
 /login.feature
 /loginHardcode.feature
 /contactDDT.feature
+/DealDataTable.feature
+/DealDataTableMaps.feature
+/tagging.feature
+/hooks.feature
