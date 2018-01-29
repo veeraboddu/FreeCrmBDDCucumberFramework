@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="19.256286">
+<testcase classname="Free CRM create contacts" name="Free crm create new contact" time="9.919261">
+<system-out><![CDATA[Given user is already on login page partTHREE...............................passed
+When check title of the page is free crm partTHREE..........................passed
+Then enter "naveenk" and "test@123" partTHREE...............................passed
+Then click on the login button partTHREE....................................passed
+Then check user is on home page partTHREE...................................passed
+Then user moves to new contact page partTHREE...............................passed
+Then enter new contact details "Veera" and "Boddu" and "Automation Eng" partTHREE.passed
+Then Close the browser partTHREE............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM create contacts" name="Free crm create new contact 2" time="9.337025">
+<system-out><![CDATA[Given user is already on login page partTHREE...............................passed
+When check title of the page is free crm partTHREE..........................passed
+Then enter "naveenk" and "test@123" partTHREE...............................passed
+Then click on the login button partTHREE....................................passed
+Then check user is on home page partTHREE...................................passed
+Then user moves to new contact page partTHREE...............................passed
+Then enter new contact details "Sunitha" and "Boddu" and "Manager" partTHREE.passed
+Then Close the browser partTHREE............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -7,7 +7,12 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(  
-		features = "C:\\Gene_Regulatary_Backup\\Java GPRSTest\\workspace\\FreeCrmBDDCucumberFramework\\src\\main\\java\\Features\\login.feature", //the path of the feature files
+		// Example 1
+		//features ="C:\\Users\\bodduv\\git\\FreeCrmBDDCucumberFramework\\FreeCrmBDDCucumberFramework\\src\\main\\java\\Features\\login.feature",
+		
+		// Example 2
+		features = "C:\\Users\\bodduv\\git\\FreeCrmBDDCucumberFramework\\FreeCrmBDDCucumberFramework\\src\\main\\java\\Features\\loginHardcode.feature", //the path of the feature files
+		
 		glue={"StepDefinitions"}, //the path of the step definition files
 		format= {"pretty","html:test-output"},
 		//dryRun = true,   // it will check that proper stepdefinition are true or not ie: feature and step def are equal - but will not run the file
@@ -20,7 +25,7 @@ public class TestRunner {
  
 }	
 
-// dryRun, Features, Glue, Tags, Monochrome, format, Strict
+// dryRun, Features, Glue, Tags, Monochrome, format, Strict, tags
 // features - path of the feature file
 // glue - path of the step defination file
 // format - report file in an folder structure.

@@ -1,113 +1,122 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Gene_Regulatary_Backup/Java GPRSTest/workspace/FreeCrmBDDCucumberFramework/src/main/java/Features/login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/bodduv/git/FreeCrmBDDCucumberFramework/FreeCrmBDDCucumberFramework/src/main/java/Features/contactDDT.feature");
 formatter.feature({
   "line": 1,
-  "name": "Free CRM Login features",
+  "name": "Free CRM create contacts",
   "description": "",
-  "id": "free-crm-login-features",
+  "id": "free-crm-create-contacts",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "comments": [
-    {
-      "line": 3,
-      "value": "#Gherkin keyword"
-    },
-    {
-      "line": 4,
-      "value": "#with Examples Keyword"
-    }
-  ],
-  "line": 5,
-  "name": "Free CRM Login Test Scenario",
+  "line": 3,
+  "name": "Free crm create new contact",
   "description": "",
-  "id": "free-crm-login-features;free-crm-login-test-scenario",
+  "id": "free-crm-create-contacts;free-crm-create-new-contact",
   "type": "scenario_outline",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 7,
-  "name": "user is already on Login Page",
+  "line": 4,
+  "name": "user is already on login page partTHREE",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 8,
-  "name": "title of login page is Free CRM",
+  "line": 5,
+  "name": "check title of the page is free crm partTHREE",
   "keyword": "When "
 });
 formatter.step({
+  "line": 6,
+  "name": "enter \"\u003cusername\u003e\" and \"\u003cpassword\u003e\" partTHREE",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 7,
+  "name": "click on the login button partTHREE",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 8,
+  "name": "check user is on home page partTHREE",
+  "keyword": "Then "
+});
+formatter.step({
   "line": 9,
-  "name": "user enters \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
+  "name": "user moves to new contact page partTHREE",
   "keyword": "Then "
 });
 formatter.step({
   "line": 10,
-  "name": "user clicks on login button",
+  "name": "enter new contact details \"\u003cfirstname\u003e\" and \"\u003clastname\u003e\" and \"\u003cposition\u003e\" partTHREE",
   "keyword": "Then "
 });
 formatter.step({
   "line": 11,
-  "name": "user is on home page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "Close the browser",
+  "name": "Close the browser partTHREE",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 15,
+  "line": 13,
   "name": "",
   "description": "",
-  "id": "free-crm-login-features;free-crm-login-test-scenario;",
+  "id": "free-crm-create-contacts;free-crm-create-new-contact;",
   "rows": [
     {
       "cells": [
         "username",
-        "password"
+        "password",
+        "firstname",
+        "lastname",
+        "position"
       ],
-      "line": 16,
-      "id": "free-crm-login-features;free-crm-login-test-scenario;;1"
+      "line": 15,
+      "id": "free-crm-create-contacts;free-crm-create-new-contact;;1"
     },
     {
       "cells": [
         "naveenk",
-        "test@123"
+        "test@123",
+        "Veera",
+        "Boddu",
+        "Automation Eng"
       ],
-      "line": 17,
-      "id": "free-crm-login-features;free-crm-login-test-scenario;;2"
+      "line": 16,
+      "id": "free-crm-create-contacts;free-crm-create-new-contact;;2"
     },
     {
       "cells": [
-        "tom",
-        "test456"
+        "naveenk",
+        "test@123",
+        "Sunitha",
+        "Boddu",
+        "Manager"
       ],
-      "line": 18,
-      "id": "free-crm-login-features;free-crm-login-test-scenario;;3"
+      "line": 17,
+      "id": "free-crm-create-contacts;free-crm-create-new-contact;;3"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 17,
-  "name": "Free CRM Login Test Scenario",
+  "line": 16,
+  "name": "Free crm create new contact",
   "description": "",
-  "id": "free-crm-login-features;free-crm-login-test-scenario;;2",
+  "id": "free-crm-create-contacts;free-crm-create-new-contact;;2",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 7,
-  "name": "user is already on Login Page",
+  "line": 4,
+  "name": "user is already on login page partTHREE",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 8,
-  "name": "title of login page is Free CRM",
+  "line": 5,
+  "name": "check title of the page is free crm partTHREE",
   "keyword": "When "
 });
 formatter.step({
-  "line": 9,
-  "name": "user enters \"naveenk\" and \"test@123\"",
+  "line": 6,
+  "name": "enter \"naveenk\" and \"test@123\" partTHREE",
   "matchedColumns": [
     0,
     1
@@ -115,93 +124,136 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
+  "line": 7,
+  "name": "click on the login button partTHREE",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 8,
+  "name": "check user is on home page partTHREE",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 9,
+  "name": "user moves to new contact page partTHREE",
+  "keyword": "Then "
+});
+formatter.step({
   "line": 10,
-  "name": "user clicks on login button",
+  "name": "enter new contact details \"Veera\" and \"Boddu\" and \"Automation Eng\" partTHREE",
+  "matchedColumns": [
+    2,
+    3,
+    4
+  ],
   "keyword": "Then "
 });
 formatter.step({
   "line": 11,
-  "name": "user is on home page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "Close the browser",
+  "name": "Close the browser partTHREE",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginStepDefinitions.user_is_already_on_Login_Page()"
+  "location": "ContactDDTStepDefinition.user_is_already_on_login_page_partTHREE()"
 });
 formatter.result({
-  "duration": 8000858866,
+  "duration": 4890592253,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinitions.title_of_login_page_is_Free_CRM()"
+  "location": "ContactDDTStepDefinition.check_title_of_the_page_is_free_crm_partTHREE()"
 });
 formatter.result({
-  "duration": 18585917,
+  "duration": 14067015,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "naveenk",
-      "offset": 13
+      "offset": 7
     },
     {
       "val": "test@123",
-      "offset": 27
+      "offset": 21
     }
   ],
-  "location": "LoginStepDefinitions.user_enters_and(String,String)"
+  "location": "ContactDDTStepDefinition.enter_and_partTHREE(String,String)"
 });
 formatter.result({
-  "duration": 432535269,
+  "duration": 351373221,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinitions.user_clicks_on_login_button()"
+  "location": "ContactDDTStepDefinition.click_on_the_login_button_partTHREE()"
 });
 formatter.result({
-  "duration": 2313545332,
+  "duration": 1745098571,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinitions.user_is_on_home_page()"
+  "location": "ContactDDTStepDefinition.check_user_is_on_home_page_partTHREE()"
 });
 formatter.result({
-  "duration": 35195456,
+  "duration": 8435939,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinitions.close_the_browser()"
+  "location": "ContactDDTStepDefinition.user_moves_to_new_contact_page_partTHREE()"
 });
 formatter.result({
-  "duration": 56656,
+  "duration": 1265410225,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Veera",
+      "offset": 27
+    },
+    {
+      "val": "Boddu",
+      "offset": 39
+    },
+    {
+      "val": "Automation Eng",
+      "offset": 51
+    }
+  ],
+  "location": "ContactDDTStepDefinition.enter_new_contact_details_and_and_partTHREE(String,String,String)"
+});
+formatter.result({
+  "duration": 1644256496,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ContactDDTStepDefinition.close_the_browser_partTHREE()"
+});
+formatter.result({
+  "duration": 27507,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 18,
-  "name": "Free CRM Login Test Scenario",
+  "line": 17,
+  "name": "Free crm create new contact",
   "description": "",
-  "id": "free-crm-login-features;free-crm-login-test-scenario;;3",
+  "id": "free-crm-create-contacts;free-crm-create-new-contact;;3",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 7,
-  "name": "user is already on Login Page",
+  "line": 4,
+  "name": "user is already on login page partTHREE",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 8,
-  "name": "title of login page is Free CRM",
+  "line": 5,
+  "name": "check title of the page is free crm partTHREE",
   "keyword": "When "
 });
 formatter.step({
-  "line": 9,
-  "name": "user enters \"tom\" and \"test456\"",
+  "line": 6,
+  "name": "enter \"naveenk\" and \"test@123\" partTHREE",
   "matchedColumns": [
     0,
     1
@@ -209,70 +261,113 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
+  "line": 7,
+  "name": "click on the login button partTHREE",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 8,
+  "name": "check user is on home page partTHREE",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 9,
+  "name": "user moves to new contact page partTHREE",
+  "keyword": "Then "
+});
+formatter.step({
   "line": 10,
-  "name": "user clicks on login button",
+  "name": "enter new contact details \"Sunitha\" and \"Boddu\" and \"Manager\" partTHREE",
+  "matchedColumns": [
+    2,
+    3,
+    4
+  ],
   "keyword": "Then "
 });
 formatter.step({
   "line": 11,
-  "name": "user is on home page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "Close the browser",
+  "name": "Close the browser partTHREE",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginStepDefinitions.user_is_already_on_Login_Page()"
+  "location": "ContactDDTStepDefinition.user_is_already_on_login_page_partTHREE()"
 });
 formatter.result({
-  "duration": 5147943832,
+  "duration": 4169289863,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinitions.title_of_login_page_is_Free_CRM()"
+  "location": "ContactDDTStepDefinition.check_title_of_the_page_is_free_crm_partTHREE()"
 });
 formatter.result({
-  "duration": 29759801,
+  "duration": 12857541,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "tom",
-      "offset": 13
+      "val": "naveenk",
+      "offset": 7
     },
     {
-      "val": "test456",
-      "offset": 23
+      "val": "test@123",
+      "offset": 21
     }
   ],
-  "location": "LoginStepDefinitions.user_enters_and(String,String)"
+  "location": "ContactDDTStepDefinition.enter_and_partTHREE(String,String)"
 });
 formatter.result({
-  "duration": 797564547,
+  "duration": 297664926,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinitions.user_clicks_on_login_button()"
+  "location": "ContactDDTStepDefinition.click_on_the_login_button_partTHREE()"
 });
 formatter.result({
-  "duration": 1913597718,
+  "duration": 1728122413,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinitions.user_is_on_home_page()"
+  "location": "ContactDDTStepDefinition.check_user_is_on_home_page_partTHREE()"
 });
 formatter.result({
-  "duration": 22176159,
+  "duration": 6362672,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinitions.close_the_browser()"
+  "location": "ContactDDTStepDefinition.user_moves_to_new_contact_page_partTHREE()"
 });
 formatter.result({
-  "duration": 61582,
+  "duration": 1199282033,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Sunitha",
+      "offset": 27
+    },
+    {
+      "val": "Boddu",
+      "offset": 41
+    },
+    {
+      "val": "Manager",
+      "offset": 53
+    }
+  ],
+  "location": "ContactDDTStepDefinition.enter_new_contact_details_and_and_partTHREE(String,String,String)"
+});
+formatter.result({
+  "duration": 1923411456,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ContactDDTStepDefinition.close_the_browser_partTHREE()"
+});
+formatter.result({
+  "duration": 34075,
   "status": "passed"
 });
 });

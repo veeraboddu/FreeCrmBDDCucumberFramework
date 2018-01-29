@@ -38,8 +38,10 @@ public void title_of_login_page_is_Free_CRM() {
 @Then("^user enters \"([^\"]*)\" and \"([^\"]*)\"$")
 public void user_enters_and(String arg1, String arg2){
 	
-	driver.findElement(By.name("username")).sendKeys("naveenk");
-	driver.findElement(By.name("password")).sendKeys("test@123");
+	//driver.findElement(By.name("username")).sendKeys("naveenk");
+	//driver.findElement(By.name("password")).sendKeys("test@123");
+	driver.findElement(By.name("username")).sendKeys(arg1);
+	driver.findElement(By.name("password")).sendKeys(arg2);
 	
 }
 
